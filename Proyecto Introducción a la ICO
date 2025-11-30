@@ -35,11 +35,12 @@ void	Diccionario(char* szNombre, char szPalabras[][TAMTOKEN], int iEstadisticas[
 		while ((caracter = fgetc(fp)) != EOF) { 
 
 			char caracterLetra = (char)caracter; 
-			if (caracterLetra == '\n' || caracterLetra == '\r' || caracterLetra == '\t' || caracterLetra == ' ' || caracterLetra == ',' || caracterLetra == ';' || caracterLetra == '(' || caracterLetra == ')' || caracterLetra == '.') { //Separadores que NO se cuentan
+			if (caracterLetra == '\n' || caracterLetra == '\r' || caracterLetra == '\t' || caracterLetra == ' ' || caracterLetra == ',' || caracterLetra == ';' || caracterLetra == '#' || caracterLetra == '$' || caracterLetra == '.' || caracterLetra == 'Ñ' || aracterLetra == '\'  ) { 
 				szPalabraTemporal[contador] = '\0'; 
 
 				if (contador > 0) {
 					bool PalabraEncontrada = false; 
+
 
 					for (int i = 0; i < iNumElementos; i++) { 
 
