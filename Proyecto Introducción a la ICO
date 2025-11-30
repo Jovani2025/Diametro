@@ -257,7 +257,7 @@ void	ClonaPalabras(
 	}
 
 	
-	char abecedario[] = "abcdefghijklmnñopqrstuvwxyzáéíóú"; 
+	char abecedario[] = "zxcvbnmasdfghjklqwertyuiop"; 
 	int longitud_abecedario = strlen(abecedario); 
 
 	for (int j = 0; j < longitud; j++) { 
